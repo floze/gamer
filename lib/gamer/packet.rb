@@ -50,7 +50,7 @@ module Gamer
 				begin
 					timeout(TIMEOUT) do
 						sock.fcntl(Fcntl::F_SETFL, Fcntl::O_NONBLOCK) if defined? Fcntl::O_NONBLOCK
-            data = sock.recvfrom_nonblock(2**16)
+						data = sock.recvfrom_nonblock(2**16)
 					end
 				rescue Timeout::Error
 					# TODO: log
