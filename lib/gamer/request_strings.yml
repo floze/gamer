@@ -1,0 +1,30 @@
+quake3:
+  masterqueries:
+    # Quake 3 1.32:
+    - "\xFF\xFF\xFF\xFFgetservers 68 full empty"
+    # Quake 3 1.31:
+    - "\xFF\xFF\xFF\xFFgetservers 67 full empty"
+    # Quake 3 1.30:
+    - "\xFF\xFF\xFF\xFFgetservers 66 full empty"
+    # Quake 3 Team Arena Demo 1.27b:
+    - "\xFF\xFF\xFF\xFFgetservers 47 full empty"
+    # Quake 3 Arena 1.1x:
+    - "\xFF\xFF\xFF\xFFgetservers 43 full empty"
+  statusqueries:
+    - "\xFF\xFF\xFF\xFFgetstatus\x00"
+    - "\xFF\xFF\xFF\xFFgetinfo\x00"
+  masterresponse: "\xFF\xFF\xFF\xFFgetserversResponse"
+  statusresponses:
+   - "\xFF\xFF\xFF\xFFstatusResponse"
+   - "\xFF\xFF\xFF\xFFinfoResponse"
+
+callofduty4:
+  masterqueries:
+    - "\xFF\xFF\xFF\xFFgetservers full empty"
+  statusqueries:
+    - "\xFF\xFF\xFF\xFFgetstatus\x00"
+    - "\xFF\xFF\xFF\xFFgetinfo\x00"
+  masterresponse: "\xFF\xFF\xFF\xFFgetserversResponse"
+  statusresponses:
+   - "\xFF\xFF\xFF\xFFstatusResponse"
+   - "\xFF\xFF\xFF\xFFinfoResponse"
